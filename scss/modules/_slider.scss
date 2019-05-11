@@ -1,0 +1,52 @@
+
+.bouncy-slider {
+	margin-bottom: 140px;
+
+	&__item {
+		text-align: right;
+		display: flex !important;;
+		justify-content: space-between;
+	}
+
+	&__img {
+		width: 30%;
+	}
+
+
+	&__about {
+		position: relative;
+
+		&::after {
+			@include pos($r:-20px, $t:0);
+			content: '';
+			height: 45px;
+			width: 4px;
+			background: $green;
+		}
+	}
+
+	&__text {
+		padding-right: 20px;
+		width: 45%;
+	}
+
+	&__author {
+		font-size: 20px;
+		padding-bottom: 10px;
+	}
+	&__position, &__desc {
+		color: $grey;
+	}
+
+	&__position {
+		font-family: $source;
+		font-size: 14px;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+	}
+
+	&__desc {
+		line-height: 25px;
+	}
+	
+}

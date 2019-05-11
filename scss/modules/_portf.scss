@@ -1,0 +1,38 @@
+.bouncy-gallery-wrapper {
+	background: #f3f3f3;
+}
+
+.bouncy-portfolio {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 60px;
+	cursor: pointer;
+	
+	&__filter {
+		padding-bottom: 15px;
+		border-bottom: 2px solid transparent;
+		text-transform: capitalize;
+		
+		&:hover {
+			border-color: $green;
+		}
+	}
+
+	.active {
+		border-color: $green;
+	}
+}
+
+.bouncy-gallery {
+	padding: 0 30px 100px;
+	
+	&__item {
+		width: calc(25% - 20px);
+	    margin-bottom: 5px;
+	    overflow: hidden;
+	}
+
+	.sizer {
+		width: 20%;
+	}
+}

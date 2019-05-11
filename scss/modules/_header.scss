@@ -1,0 +1,36 @@
+.bouncy {
+	background: url('../images/header.jpg') no-repeat top center;
+	height: 100vh;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.header {
+	padding-top: 40px;
+	
+	.logo {
+		color: #fff;
+	}
+}
+
+.bouncy-menu {
+	display: flex;
+	justify-content: space-between;
+	
+	&__item {
+		padding: 8px;
+		border: 1px solid transparent;
+		border-radius: 16px;
+		
+		&:hover {
+			border-color: #fff;
+		}
+	}
+
+	a {
+		color: #fff;
+		text-decoration: none;
+		text-transform: capitalize;
+	}
+}
+

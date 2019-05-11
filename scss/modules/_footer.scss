@@ -1,0 +1,45 @@
+.bouncy-footer {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 70px;
+	
+	&__logo {
+		margin-bottom: 20px;
+	}
+
+	&__copyright {
+		margin-bottom: 30px;
+	}
+	
+	&__social {
+		display: flex;
+		font-size: 25px;
+		
+		
+		li {
+			padding-right: 10px;
+		}
+
+	}
+
+}
+
+.facebook {
+	color: #3b5998;
+}
+
+.twitter {
+	color: #26a6d1;
+}
+
+.linkedin {
+	color: #0e76a8;
+}
+.instagram {
+	color: #3f729b;
+}
+
+.vimeo {
+	color:#86c9ef;
+}

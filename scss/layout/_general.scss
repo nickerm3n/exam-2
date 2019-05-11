@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Sans+Pro:300,400');
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	font: 400 16px/normal $opensans;
+	scroll-behavior: smooth;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+.bouncy-title-wrapper {
+	margin-top: 225px;
+}
+
+
+.bouncy-title-wrapper--mod {
+	margin-top: 90px;
+}
+
+.bouncy-title {
+	
+	text-align: center;
+	color: #fff;
+	
+	&__title {
+		font: 300 2.18rem $source;
+		text-transform: uppercase;
+		margin-bottom: 40px;
+		letter-spacing: 5px;
+		
+	}
+
+	&__title--mod {
+		font-size: 20px
+	}
+
+	&__subtitle {
+		line-height: 28px;
+		
+	}
+
+	&__subtitle--mod {
+		color: $grey;
+		margin-bottom: 90px;
+	}
+}
+
+.bouncy-link {
+	@include size(37px);
+	@include pos($b:75px);
+	left: 50%;
+	color: #fff;
+	background: $green;
+	border-radius: 50%;
+	display: flex;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	
+	a {
+		color: #fff;
+	}
+
+}
+
+.bouncy-title--mod {
+	color: #000;
+}
+
+#map {
+	margin-bottom: 90px;
+	height: 440px;
+	width: 100%;
+}
+
+.hidden {
+	display: none;
+}
+
+svg {
+	width: 118px;
+	height: 18px;
+	fill: #fff;
+}

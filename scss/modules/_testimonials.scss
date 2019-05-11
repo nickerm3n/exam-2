@@ -1,0 +1,45 @@
+.bouncy-testimonials {
+	background: $lightgrey;
+	padding-bottom: 100px;
+	
+	&__slider-wrapper {
+		background: #FFF;
+	}
+	
+	.bouncy-testimonials__slider {
+		
+	}
+
+	&__slider-item {
+		padding-top: 55px;
+		padding-bottom: 120px;
+		display: flex !important;
+		justify-content: space-around;
+	}
+
+	&__text {
+		width: 60%;
+	}
+
+	&__author {
+		@include size(130px);
+		border-radius: 50%;
+		overflow: hidden;
+	}
+
+	&__desc {
+		line-height: 25px;
+		color: $grey;
+		padding-bottom: 30px;
+	}
+
+	&__partno {
+		font-weight: 700;
+		color: $green;
+		padding-bottom: 10px;
+	}
+
+	&__founder {
+		font-size: 14px;
+	}
+}
